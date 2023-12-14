@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Montserrat:wght@300;400&display=swap');
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: #e4e5ea;
+    font-family: 'Inter', sans-serif;
+    background-color: #0e1014;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+
+.for_balls {
+    position: relative;
+    overflow: hidden;
+}
+
+.purple_ball {
+    position: absolute;
+    top: 0;
+    left: 868px;
+    z-index: -1;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 3px 6px 27px -10px #b176d940;
+    background: radial-gradient(
+        82.3% 82.3% at 27.25% 26.5%,
+        rgba(236, 208, 255, 0.64) 0%,
+        rgba(161, 93, 207, 0.24) 59.67%,
+        rgba(118, 49, 164, 0.21) 78.59%,
+        rgba(86, 24, 128, 0.23) 100%
+    );
+    backdrop-filter: blur(2px);
+    filter: drop-shadow(3px 6px 27px rgba(177, 118, 217, 0.25)) blur(5px);
+}
+
+.red_ball {
+    position: absolute;
+    top: 83px;
+    left: 519px;
+    z-index: -1;
+    width: 83px;
+    height: 83px;
+    border-radius: 50%;
+    background: radial-gradient(
+        82.3% 82.3% at 27.25% 26.5%,
+        rgba(255, 208, 208, 0.54) 0%,
+        rgba(212, 93, 93, 0.26) 59.67%,
+        rgba(167, 49, 49, 0.25) 78.59%,
+        rgba(130, 25, 25, 0.25) 100%
+    );
+    backdrop-filter: blur(2px);
+    filter: drop-shadow(3px 6px 27px rgba(223, 125, 125, 0.25));
+}
+
+.red_ball-small {
+    position: absolute;
+    top: 547px;
+    left: 851px;
+    z-index: -1;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: radial-gradient(
+        82.3% 82.3% at 27.25% 26.5%,
+        rgba(255, 208, 208, 0.48) 0%,
+        rgba(212, 93, 93, 0.25) 59.67%,
+        rgba(167, 49, 49, 0.26) 78.59%,
+        rgba(130, 25, 25, 0.23) 100%
+    );
+    backdrop-filter: blur(2px);
+    filter: drop-shadow(3px 6px 27px rgba(223, 125, 125, 0.25)) blur(2.5px);
+}
+
+.purple_light {
+    position: absolute;
+    top: -154px;
+    left: 602px;
+    z-index: -1;
+    width: 259px;
+    height: 259px;
+    border-radius: 259px;
+    opacity: 0.5;
+    opacity: 0.5px;
+    background: #833ab4;
+    filter: blur(196px);
+}
+
+.red_light {
+    position: absolute;
+    top: 251px;
+    left: -102px;
+    z-index: -1;
+    width: 311px;
+    height: 311px;
+    border-radius: 311px;
+    opacity: 0.5;
+    background: #961a1a;
+    filter: blur(196px);
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: min-content 2fr 1fr;
+    justify-content: space-between;
+    margin-top: 46px;
+}
+
+.header__logo {
+    padding-top: 11px;
+    padding-right: 52px;
+}
+
+.header__logo-text {
+    max-width: 140px;
+    margin-top: 8px;
+    color: #e4e5ea;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 10px;
+}
+
+.header__menu {
+    padding-top: 15px;
+}
+
+.header__list {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.header__item-link {
+    color: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.header__contacts {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 44px;
+    padding-top: 14px;
+}
+
+.contacts-tel {
+    color: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.header__contacts-icon {
+    display: flex;
+    gap: 30px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 90px;
+}
+
+.info__left {
+    max-width: 362px;
+}
+
+.info__title {
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 48px;
+}
+
+.text__gradient {
+    font-weight: 900;
+    background-color: #e4e5ea;
+    background-image: linear-gradient(90deg, #fcb045 36.99%, #fd1d1d 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.info__left-text {
+    max-width: 275px;
+    color: #e4e5ea;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.info__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 304px;
+    padding-top: 15px;
+    text-align: right;
+}
+
+.info__right-mainText {
+    margin-bottom: 43px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.text__const {
+    font-weight: 700;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+}
+
+.info__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-end;
+    gap: 30px;
+    margin-bottom: 65px;
+    list-style: none;
+}
+
+.info__item-title {
+    margin-bottom: 6px;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+}
+
+.info__item-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.info__button {
+    margin-bottom: 69px;
+    border: none;
+    padding: 21px 35px;
+    color: #e4e5ea;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #4077f3;
+    cursor: pointer;
+}
+
+.footer__top {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding: 55px 0 23px;
+}
+
+.footer__title {
+    margin-bottom: 20px;
+    color: #656566;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+}
+
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    column-gap: 52px;
+    max-height: 146px;
+    font-weight: 400;
+    font-size: 16px;
+    list-style: none;
+}
+
+.footer__link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer__list-item:not(footer__list-item:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer__menu {
+    padding-left: 7px;
+}
+
+.footer__address {
+    font-style: normal;
+}
+
+.footer__contacts {
+    text-align: right;
+}
+
+.footer__address {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.address-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.footer__bottom {
+    padding-bottom: 20px;
+    text-align: right;
+}
+
+.footer__bottom p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.footer-link {
+    color: inherit;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-decoration-line: underline;
+}

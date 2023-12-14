@@ -1,0 +1,230 @@
+@media screen and (max-width: 1440px) {
+    .container {
+        padding: 0 16px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .purple_ball {
+        top: 291px;
+        left: 291px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .red_ball {
+        top: 451px;
+        left: 29px;
+        width: 43px;
+        height: 43px;
+    }
+
+    .red_ball-small {
+        top: 563px;
+        left: 278px;
+        width: 18px;
+        height: 18px;
+    }
+
+    .purple_light {
+        top: 107px;
+        left: 258px;
+        width: 259px;
+        height: 259px;
+        opacity: 0.5;
+    }
+
+    .red_light {
+        top: 241px;
+        left: -55px;
+        width: 211px;
+        height: 210px;
+        opacity: 0.5;
+    }
+
+    .header {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        background-color: #0e1014;
+    }
+
+    .header__logo,
+    .header__contacts,
+    .item_notForMobile {
+        display: none;
+    }
+
+    .header__menu {
+        padding: 20px 0;
+    }
+
+    .contacts-tel {
+        font-size: 16px;
+    }
+
+    .header__list {
+        gap: 16px;
+        font-weight: 500;
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+    .footer__list {
+        font-size: 14px;
+    }
+
+    .footer__address {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 700px) {
+    .container {
+        min-width: 320px;
+        margin: 0 auto;
+    }
+
+    .container__main {
+        background: radial-gradient(
+            238.53% 189.02% at 3.2% 3.49%,
+            rgba(255, 246, 233, 0.1) 0%,
+            rgba(26, 29, 35, 0.1) 26.62%,
+            rgba(26, 29, 35, 0.1) 52.1%,
+            rgba(26, 29, 35, 0.01) 70.17%,
+            rgba(26, 29, 35, 0) 100%
+        );
+        backdrop-filter: blur(7.5px);
+    }
+
+    .container_noise {
+        background: url(../img/noise.png) 100px 100px repeat;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .header__item-link {
+        font-size: 12px;
+    }
+
+    .info {
+        flex-direction: column;
+        margin-top: 0px;
+        padding-top: 40px;
+    }
+
+    .info__title {
+        margin-bottom: 15px;
+        font-size: 36px;
+    }
+
+    .info__right {
+        align-items: flex-start;
+        padding-top: 45px;
+        text-align: left;
+    }
+
+    .info__right-mainText {
+        margin-bottom: 20px;
+    }
+
+    .text__const {
+        text-transform: lowercase;
+    }
+
+    .info__list {
+        grid-template-columns: max-content 1fr;
+        gap: 7px 10px;
+        margin-bottom: 53px;
+    }
+
+    .info__list-item {
+        position: relative;
+    }
+
+    .info__item-title {
+        margin-left: 15px;
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 13px;
+        letter-spacing: 0.65px;
+        text-transform: uppercase;
+    }
+
+    .info__item-title::after {
+        content: '';
+        position: absolute;
+        top: 8px;
+        left: 0;
+        display: block;
+        width: 10px;
+        height: 1px;
+        background: linear-gradient(90deg, #fcb045 36.99%, #fd1d1d 100%);
+    }
+
+    .info__item-text {
+        display: none;
+    }
+
+    .info__button {
+        display: none;
+    }
+
+    .footer {
+        background: #0e1014;
+    }
+
+    .footer__top {
+        grid-template-columns: 1fr;
+        padding-top: 41px;
+        padding-bottom: 50px;
+    }
+
+    .footer__title {
+        font-size: 12px;
+    }
+
+    .footer__list {
+        column-gap: 20px;
+        max-width: 125px;
+        max-height: 151px;
+    }
+
+    .footer__link-mobile {
+        max-width: 171px;
+    }
+
+    .footer__about {
+        margin-bottom: 21px;
+    }
+
+    .footer__menu {
+        margin-bottom: 21px;
+        padding: 0;
+    }
+
+    .footer__contacts,
+    .footer__bottom {
+        text-align: left;
+    }
+
+    .footer__address {
+        gap: 0px;
+    }
+
+    .contacts-tel {
+        margin-bottom: 8px;
+    }
+
+    .address-icons {
+        justify-content: flex-start;
+        margin-bottom: 10px;
+    }
+
+    .footer_icon {
+        width: 24px;
+        height: 24px;
+    }
+}
