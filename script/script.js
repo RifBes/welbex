@@ -33,11 +33,11 @@ const rename = (arr, type, num) => {
 window.addEventListener('resize', (e) => {
     const width = document.body.clientWidth;
 
-    if (width < 990) {
+    if (width <= 990) {
         notMobileItem.remove();
     }
 
-    if (width < 700) {
+    if (width <= 700) {
         rename(infoTitles, infoTitles_content, 1);
         rename(footers, footers_contetn, 1);
     } else {
@@ -46,11 +46,11 @@ window.addEventListener('resize', (e) => {
     }
 });
 
-if (window.innerWidth < 990) {
+if (window.innerWidth <= 990) {
     notMobileItem.remove();
 }
 
-if (window.innerWidth < 700) {
+if (window.innerWidth <= 700) {
     rename(infoTitles, infoTitles_content, 1);
     rename(footers, footers_contetn, 1);
 }
